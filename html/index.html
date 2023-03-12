@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" class="site-icon" href="../img/site-icon.png">
+    <title>Foodie Valley - Explore the Famous Flavors of the Philippines</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <img class="first-section-background-images-last-preview" src="../img/fcb-pic6.png" alt="bg1-pre">
+    <img class="first-section-background-images-last-preview" src="../img/fcb-pic1.png" alt="bg1-pre">
+    <img class="first-section-background-images-last-preview" src="../img/fcb-pic2.png" alt="bg1-pre">
+    <img class="first-section-background-images-last-preview" src="../img/fcb-pic3.png" alt="bg1-pre">
+    <img class="first-section-background-images-last-preview" src="../img/fcb-pic4.png" alt="bg1-pre">
+    <img class="first-section-background-images-last-preview" src="../img/fcb-pic5.png" alt="bg1-pre">
+
+    <img class="first-section-background-images right-slide" src="../img/fcb-pic1.png" alt="bg1">
+    <img class="first-section-background-images right-slide" src="../img/fcb-pic2.png" alt="bg1">
+    <img class="first-section-background-images right-slide" src="../img/fcb-pic3.png" alt="bg1">
+    <img class="first-section-background-images right-slide" src="../img/fcb-pic4.png" alt="bg1">
+    <img class="first-section-background-images right-slide" src="../img/fcb-pic5.png" alt="bg1">
+    <img class="first-section-background-images right-slide" src="../img/fcb-pic6.png" alt="bg1">
+    <div class="first-section-color-overlay"></div>
+
+    <div class="header-container">
+
+        <img class="site-logo" src="../img/site-logo.png" alt="site-logo">
+
+        <nav>
+            <ul class="menu">
+                <li><a class="menu-choices" href="#"><img class="nav-icon" src="../img/nav-home-icon.png" alt="home-icon"> HOME</a></li>
+                <div class="dropdown1">
+                    <li><a class="menu-choices" href="#"
+                        onmouseenter="document.getElementById('fd-up1').style.display ='inline', 
+                        document.getElementById('fd-down1').style.display ='none'" 
+                        onmouseleave="document.getElementById('fd-up1').style.display ='none', 
+                        document.getElementById('fd-down1').style.display ='inline'">FAMOUS DISHES 
+                        <img id="fd-down1" class="nav-icon" src="../img/nav-dropdown-darrow-icon.png" alt="dd-icon">
+                        <img id="fd-up1" class="hidden-nav-icon" src="../img/nav-dropdown-uarrow-icon.png" alt="dd-icon">
+                    </a></li>
+                        <div class="dropdown-content1"
+                        onmouseenter="document.getElementById('fd-up1').style.display ='inline', 
+                        document.getElementById('fd-down1').style.display ='none'" 
+                        onmouseleave="document.getElementById('fd-up1').style.display ='none', 
+                        document.getElementById('fd-down1').style.display ='inline'">
+                            <ul class="dropdown-menu1">
+                                <a href="#">FROM LUZON</a>
+                                <a href="#">FROM VISAYAS</a>
+                                <a href="#">FROM MINDANAO</a>
+                            </ul>
+                        </div>
+                </div>
+                <div class="dropdown2">
+                    <li><a class="menu-choices" href="#"
+                        onmouseenter="document.getElementById('fd-up2').style.display ='inline', 
+                        document.getElementById('fd-down2').style.display ='none'" 
+                        onmouseleave="document.getElementById('fd-up2').style.display ='none', 
+                        document.getElementById('fd-down2').style.display ='inline'">FAMOUS DESSERTS 
+                        <img id="fd-down2" class="nav-icon" src="../img/nav-dropdown-darrow-icon.png" alt="dd-icon">
+                        <img id="fd-up2" class="hidden-nav-icon" src="../img/nav-dropdown-uarrow-icon.png" alt="dd-icon">
+                    </a></li>
+                        <div class="dropdown-content2"
+                        onmouseenter="document.getElementById('fd-up2').style.display ='inline', 
+                        document.getElementById('fd-down2').style.display ='none'" 
+                        onmouseleave="document.getElementById('fd-up2').style.display ='none', 
+                        document.getElementById('fd-down2').style.display ='inline'">
+                            <ul class="dropdown-menu2">
+                                <a href="#">FROM LUZON</a>
+                                <a href="#">FROM VISAYAS</a>
+                                <a href="#">FROM MINDANAO</a>
+                            </ul>
+                        </div>
+                </div>
+                <li><a class="menu-choices" href="#"><img class="nav-icon" src="../img/nav-aboutus-icon.png" alt="about-us-icon"> ABOUT US</a></li>
+            </ul>
+
+        </nav>
+        
+        <p id="1343px-btn" class="sidebar-menu-icon-1343px" onclick="openNav()">NAVIGATION MENU ☰</p>
+
+        <div id="660px-btn" class="sidebar-menu-icon-660px-container" onclick="openNav()">
+        
+            <img class="sidebar-menu-icon-660px" src="../img/nav-menu-icon.png" alt="menu-logo" 
+            onmouseenter="document.getElementById('660px-btn').style.backgroundColor ='rgba(255, 172, 48, 0.5)'" 
+            onmouseleave="document.getElementById('660px-btn').style.backgroundColor ='rgba(0,0,0,0.5)'">
+      
+        </div>
+
+    </div>
+
+    <div id="sidenav-container" class="sidenav-container">
+
+        <div id="mySidenav" class="sidenav">
+            <a class="closebtn" href="#" onclick="closeNav()">&times;</a>
+            <a class="sidenav-selections" href="#">HOME</a>
+            <center><a class="sidenav-selections-main-topics">FAMOUS DISHES</a></center>
+            <a class="sidenav-selections" href="#">FROM LUZON</a>
+            <a class="sidenav-selections" href="#">FROM VISAYAS</a>
+            <a class="sidenav-selections" href="#">FROM MINDANAO</a>
+            <center><a class="sidenav-selections-main-topics">FAMOUS DESSERTS</a></center>
+            <a class="sidenav-selections" href="#">FROM LUZON</a>
+            <a class="sidenav-selections" href="#">FROM VISAYAS</a>
+            <a class="sidenav-selections" href="#">FROM MINDANAO</a>
+            <a class="sidenav-selections" href="#">ABOUT US</a>
+        </div>
+
+        </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

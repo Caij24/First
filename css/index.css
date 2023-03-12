@@ -1,0 +1,352 @@
+/*--|Import Font Style/Family|-- */
+
+@font-face {
+    font-family: Merienda;
+    src: url(../fonts/Merienda-Regular.ttf);
+}
+
+@font-face {
+    font-family: Merienda-Bold;
+    src: url(../fonts/Merienda-Bold.ttf);
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*--|Vertical Scrollbar Design|-- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/*--|Global Design|-- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*--|Page/Site Body Design|-- */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*--|Navigation/Header Design|-- */
+
+.header-container {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+}
+
+.site-logo {
+    float: left;
+    width: 220px;
+    margin-left: 58.5px;
+    margin-top: 22.5px;
+}
+
+.nav-icon {
+    width: 20px;
+}
+
+.hidden-nav-icon {
+    width: 20px;
+    display: none;
+}
+
+nav .menu {
+    list-style: none;
+    float: right;
+    padding-right: 60px;
+    padding-top: 36.5px;
+}
+
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu li .menu-choices {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    font-size: 22.5px;
+    font-family: Merienda-Bold;
+    color: white;
+}
+
+nav .menu li .menu-choices:hover{
+    background-color: rgba(255, 172, 48, 0.5);
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-left: 15px;
+    min-width: 236.5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content1 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size-adjust: 40.5px;
+    font-family: Merienda-Bold;
+    display: block;
+}
+  
+.dropdown-content1 a:hover {
+    background-color: rgba(255, 172, 48, 0.5);
+}
+  
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-left: 15px;
+    min-width: 266.5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content2 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size-adjust: 40.5px;
+    font-family: Merienda-Bold;
+    display: block;
+}
+  
+.dropdown-content2 a:hover {
+    background-color: rgba(255, 172, 48, 0.5);
+}
+  
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.sidebar-menu-icon-1343px {
+    display: none;
+}
+
+.sidebar-menu-icon-660px-container {
+    display: none;
+}
+
+.sidebar-menu-icon-660px {
+    display: none;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*--|First Page Section Background Design|-- */
+
+.first-section-background-images-last-preview {
+    width: 100%;
+    height: 786px;
+    position: absolute;
+    display: none;
+}
+
+.first-section-background-images {
+    width: 100%;
+    height: 786px;
+    position: absolute;
+    display: none;
+}
+
+.first-section-color-overlay {
+    width: 100%;
+    height: 786px;
+    position: absolute;
+    background-color: black;
+    opacity: 35%;
+}
+
+.right-slide {
+    animation-name: right-slide;
+    animation-duration: 2.5s;
+}
+  
+@keyframes right-slide {
+    from {right: -1300px} 
+    to {right: 0}
+}
+/*--------------------------------------------------------------------------------------*/
+
+/*--|Responsive Setting Design|-- */
+
+@media screen and (max-width: 1343px) {
+
+    nav .menu {
+        display: none;
+    }
+
+    .sidebar-menu-icon-1343px {
+        float: right;
+        font-size: 22.5px;
+        font-family: Merienda-Bold;
+        color: white;
+        margin-top: 25.5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 48.5px;
+        display: block;
+    }
+
+    .sidebar-menu-icon-1343px:hover {
+        background-color: rgba(255, 172, 48, 0.5);
+    }
+
+    .sidebar-menu-icon-660px-container {
+        display: none;
+    }
+
+    .sidebar-menu-icon-660px {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .header-container {
+        margin-top: 3.5px;
+    }
+
+    .site-logo {
+        margin-left: 55.5px;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    .sidebar-menu-icon-1343px {
+        display: none;
+    }
+
+    .sidebar-menu-icon-660px-container {
+        float: right;
+        width: 70px;
+        height: 60px;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 10px;
+        margin-top: 21.5px;
+        margin-right: 55.5px;
+        display: block;
+    }
+
+    .sidebar-menu-icon-660px {
+        position: absolute;
+        cursor: pointer;
+        margin-top: 8.5px;
+        margin-left: 7.5px;
+        width: 55px;
+        color: white;
+        display: block;
+    }
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.sidenav-container {
+    width: 0;
+    height: 786px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    float: right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111111e7;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav .sidenav-selections {
+    padding: 8px 8px 8px 50px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Merienda-Bold;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav-selections-main-topics {
+    padding: 8px 8px 8px 42px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Merienda-Bold;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav .sidenav-selections:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    text-decoration: none;
+    font-size: 36px;
+    padding-left: 20px;
+    font-family: Merienda-Bold;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav .closebtn:hover {
+    color: rgba(255, 0, 0, 0.719);
+  }
